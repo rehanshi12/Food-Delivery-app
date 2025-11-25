@@ -1,0 +1,15 @@
+{
+     "version": 2,
+     "builds": [
+       {
+         "src": "food-delivery-app/**",
+         "use": "@vercel/static"
+       }
+     ],
+     "routes": [
+       {
+         "src": "/(.*)",
+         "dest": "/food-delivery-app/$1"
+       }
+     ]
+   }
